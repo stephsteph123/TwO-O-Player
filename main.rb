@@ -1,9 +1,8 @@
-require './player_1.rb'
-require './player_2.rb'
+require './game.rb'
+require './player.rb'
+require './question.rb'
 
-# gets.chomp to get input from users and puts for output
-# Use puts, raise some_val.inspect, and byebug to help with debugging
+#purpose is to host all code here
 
-puts answer1
-puts"----NEW TURN----"
-puts answer2
+new_game = Game.new("New Game")
+new_game.start
